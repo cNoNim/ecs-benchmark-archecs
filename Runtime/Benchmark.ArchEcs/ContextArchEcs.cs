@@ -16,17 +16,17 @@ namespace Benchmark.ArchEcs
 {
 
 #if PURE_ECS
-public class ContextArchPure : ComplexContextBase
+public class ContextArchPureEcs : ComplexContextBase
 #else
-public class ContextArch : ContextBase
+public class ContextArchEcs : ContextBase
 #endif
 {
 	private World?      _world;
 	private Group<int>? _ecsSystems;
 #if PURE_ECS
-	static ContextArchPure()
+	static ContextArchPureEcs()
 #else
-	static ContextArch()
+	static ContextArchEcs()
 #endif
 	{
 		ArrayRegistry.Add<Position>();
@@ -45,11 +45,11 @@ public class ContextArch : ContextBase
 	}
 
 #if PURE_ECS
-	public ContextArchPure()
-		: base("Arch Pure")
+	public ContextArchPureEcs()
+		: base("Arch Pure Ecs")
 #else
-	public ContextArch()
-		: base("Arch")
+	public ContextArchEcs()
+		: base("Arch Ecs")
 #endif
 	{}
 
