@@ -1,0 +1,21 @@
+{
+  "name": "ecs.benchmark.archecs",
+  "author": {
+    "name": "cNoNim",
+    "url": "https://github.com/cNoNim"
+  },
+  "displayName": "ECS Benchmark Arch Ecs",
+  "description": "ECS Benchmark Arch Ecs",
+  "unity": "2020.3",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cNoNim/ecs-benchmark-archecs.git"
+  },
+  "dependencies": {},
+  "keywords": [
+    "ecs",
+    "benchmark",
+    "archecs"
+  ]
+}
